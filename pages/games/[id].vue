@@ -14,7 +14,7 @@
 //must match to the name of the file in the pages folder (products/[id].vue)
 const { id } = useRoute().params
 
-// const uri = 'https://fakestoreapi.com/products/' + id
+const uri = 'https://fakestoreapi.com/products/' + id
 //fetch game
 const { data: game } = await useFetch(uri, { key: id })
 
